@@ -1,0 +1,47 @@
+------------
+Preparation:
+------------
+1.
+    Add a new migration model called accounts
+
+2.
+    Add a new migration model called transactions
+
+3.
+    Create a foreign key from accounts to transactions
+
+------------
+Development:
+------------
+
+1.
+    Add a belongs to/has many method from accounts to transactions and reverse
+
+2.
+    Create a accounts --resource controller
+
+3.
+    Create a transactions --resource controller
+
+4.
+    Create a api route for list all accounts together with sum-balance for all respective transactions. Inject sum-balance via attributes
+
+5.
+    Create a post api route for "Create new account" associate it to accounts controller and mount it to create function,
+
+6.
+    Create a get api route for "List transactions for a specific account", associate it to accounts controller and mount it to show function
+
+7.
+    Create a post api route for "New transaction", associate it to transaction controller and mount it to create function
+
+
+------------
+Tests (will be added to git later):
+------------
+1.
+    Watch video youtube tutorial regarding tests, refer to this: https://www.youtube.com/watch?v=RJ_iXzdSpT0&t=760s&ab_channel=Coder%27sTape
+2.
+    Create a new test function called can_create_a_transaction
+3.
+    Run test to make sure it passes
