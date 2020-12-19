@@ -46,6 +46,10 @@ class AccountController extends Controller
                 'account_name' => $request->name,
                 'account_id' => $account->id
             ], 201);
+        } else {
+            return response()->json([
+                'message' => 'Account not created, please try again',
+            ], 409);
         }
     }
 

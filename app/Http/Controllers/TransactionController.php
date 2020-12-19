@@ -48,6 +48,10 @@ class TransactionController extends Controller
                     'amount' => $request->amount,
                 ],
             ], 201);
+        } else {
+            return response()->json([
+                'message' => 'Could not create transaction, please try again',
+            ], 409);
         }
     }
 }
