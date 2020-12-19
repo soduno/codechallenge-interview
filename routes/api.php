@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('accounts', [AccountController::class, 'index']);
+Route::get('account/{accountId}/transactions/', [AccountController::class, 'show']);
+
+Route::post('account', [AccountController::class, 'store']);
+Route::post('account/{accountId}/transaction', [TransactionController::class, 'store']);
