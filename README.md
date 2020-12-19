@@ -22,7 +22,7 @@
         <td>GET</td>
         <td>http://eindom-task.test/api/accounts</td>
         <td></td>
-        <td>List all accounts</td>
+        <td>List all accounts with sum balance</td>
     </tr>
     <tr>
         <td>POST</td>
