@@ -18,25 +18,25 @@
     </tr>
     <tr>
         <td>GET</td>
-        <td>http://eindom-task.test/api/accounts</td>
+        <td>http://task.test/api/accounts</td>
         <td></td>
         <td>List all accounts with sum balance</td>
     </tr>
     <tr>
         <td>POST</td>
-        <td>http://eindom-task.test/api/account</td>
+        <td>http://task.test/api/account</td>
         <td>name</td>
         <td>Create a new account</td>
     </tr>
     <tr>
         <td>GET</td>
-        <td>http://eindom-task.test/api/account/{accountId}/transactions</td>
+        <td>http://task.test/api/account/{accountId}/transactions</td>
         <td></td>
         <td>Get all transactions based on the ID of the account.</td>
     </tr>
     <tr>
         <td>POST</td>
-        <td>http://eindom-task.test/api/account/{accountId}/transaction</td>
+        <td>http://task.test/api/account/{accountId}/transaction</td>
         <td>description,amount</td>
         <td>Create a new transaction</td>
     </tr>
