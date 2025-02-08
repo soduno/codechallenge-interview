@@ -1,5 +1,3 @@
-<h1>Eindom Backend task</h1>
-
 <p>
     Thanks for the specific task regarding creating a minor REST API. <br />
     I have made it simple, since It was my best understanding of the task to keep it simple.
